@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+
+            android:id="@+id/contacttoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+
+            android:title=" "
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/navigation_header_icon"
+                    android:layout_alignParentRight="true"
+
+                    />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="تماس با ما"
+                    android:textSize="20dp"
+                    android:paddingRight="35dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        tools:context=".Activities.MainActivity">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtUserLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/txtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="نام شما"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPassLayout"
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:layout_below="@id/txtUserLayout">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ایمیل شما "
+                android:gravity="right"
+                android:textAlignment="gravity"
+                android:inputType="textEmailAddress"
+                />
+        </android.support.design.widget.TextInputLayout >
+        <RadioGroup
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPassLayout"
+            android:id="@+id/radio_group"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            >
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="انتقاد،نظر"
+                android:id="@+id/opinion"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="سفارش اپلیکشن"
+                android:id="@+id/order"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                />
+        </RadioGroup>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtmessLayout"
+            android:layout_below="@+id/radio_group">
+
+            <EditText
+                android:id="@+id/message"
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="right"
+                android:textAlignment="gravity"
+
+                android:hint="پیام شما"
+
+                />
+        </android.support.design.widget.TextInputLayout >
+
+
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:onClick="validateAndLogin"
+        android:layout_gravity="left|bottom"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_send_white_24dp"
+        android:id="@+id/btnFloatAction"
+
+        />
+</android.support.design.widget.CoordinatorLayout>

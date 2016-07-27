@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.android.shopping.Activities.ManageUser">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_UserManager"
+                android:layout_alignParentRight="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user"
+                />
+                <TextView
+                    android:layout_toLeftOf="@+id/img_UserManager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="مدیریت کاربران"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/emailLayout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="جست و جوی ایمیل کاربر:"
+            android:gravity="right"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:id="@+id/txtError"
+        android:layout_below="@+id/emailLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/items"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textColor="@color/mdtp_dark_gray"
+        android:text="ایمیل مورد نظر در دیتابیس موجود نمی باشد"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recviewUser"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/UserProgress"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

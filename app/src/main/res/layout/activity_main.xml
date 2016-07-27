@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+
+    tools:context="com.example.android.shopping.MainActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/logo"
+        android:top="120dp"
+        android:id="@+id/img_logo"
+        android:layout_gravity="center_horizontal|center_vertical"
+        />
+    <ImageView
+        android:layout_below="@id/img_logo"
+        android:layout_width="match_parent"
+        android:maxWidth="400dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oshop"
+        />
+
+    </RelativeLayout>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+
+    android:layout_alignParentBottom="true"
+    android:weightSum="1"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ورود به سیستم"
+        android:id="@+id/Login"
+        android:onClick="clickLogin"
+        android:layout_alignParentRight="true"
+        android:layout_weight="0.50"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="@drawable/login_btn_background"
+        />
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:layout_toLeftOf="@id/Login"
+        android:layout_height="wrap_content"
+        android:text="ثبت نام"
+        android:onClick="RegForm"
+        android:textStyle="bold"
+        android:layout_weight="0.50"
+        android:background="@drawable/login_btn_background"
+        android:layout_alignParentLeft="true"
+        />
+
+</LinearLayout>
+
+</RelativeLayout>

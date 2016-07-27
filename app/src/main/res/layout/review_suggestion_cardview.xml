@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+
+    cardview:cardBackgroundColor="@drawable/items"
+    android:clickable="true"
+    android:background="@drawable/items"
+    android:id="@+id/chatListCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUsersuggested"
+                android:layout_margin="5dp"
+                android:layout_width="96dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="96dp"
+
+
+                android:src="@drawable/user"
+                />
+            <RelativeLayout
+                android:layout_toLeftOf="@+id/imgUsersuggested"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:id="@+id/txtUserName_suggest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="محبوبه فام"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:textSize="15sp"
+                    android:id="@+id/txtproductName_Suggested"
+                    android:textStyle="italic"
+                    android:text="محصول مورد نظر"
+                    android:layout_below="@+id/txtUserName_suggest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtProduct_id_suggested"/>
+                <ImageButton
+                    android:id="@+id/productImage_suggested"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cutmypic1"
+                    android:layout_width="70dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="70dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

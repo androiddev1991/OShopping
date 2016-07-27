@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Chatroom</string>
+    <string name="title_activity_login">ورود به سیستم</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">ایمیل</string>
+    <string name="prompt_password"> پسورد</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">اآدرس ایمیل نامعتبر است</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="pick_image_intent_text">انتخاب عکس</string>
+    <string name="title_activity_register_user">RegisterUser</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_show_single_product">ShowSingleProduct</string>
+    <string name="aboutus">
+        همکاران سیستم در سال ۱۳۶۶، با ۱۲۰ هزار تومان سرمایه و توسط جمعی سه نفره کار خود را آغاز کرد. امروز، همکاران سیستم بزرگ‌ترین شرکت نرم‌افزاری بخش خصوصی است؛ شرکت مسلط بر بازار نرم‌افزار ایران با بیش از ۲۹۰۰۰ مشتری در كسب و كارهای بزرگ، متوسط و كوچك و ۱۱۰۰ نفر سرمایه‌ی انسانی.همکاران سیستم با به‌کارگیری استانداردهای جهانی و از طریق توسعه‌‌ی فناوری اطلاعات در سازمان‌ها و مؤسسات خصوصی و دولتی، می‌کوشد کسب‌ و‌کار مشتریانش را به عنوان شرکای تجاری خود، توسعه دهد. تجربه‌ی ۲۹ ساله‌ی ما در زمینه‌‌ی راهکارهای جامع مالی، سیستم‌های اطلاعات مدیریت و فناوری تولید نرم‌افزار، مسیر پیشرفت‌مان را هموار کرده است
+
+    </string>
+</resources>

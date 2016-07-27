@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/UserListCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:background="#e6f7ff"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_user_list"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/non" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/img_user_list"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtlstEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textAlignment="gravity"
+                    android:gravity="right"
+                    android:text="Sara@yahoo.com"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/relUsername"
+                    android:layout_below="@+id/txtlstEmail">
+
+                    <TextView
+                        android:id="@+id/txtUserName_lsUser"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+
+                        android:text="سارا همت"
+                        android:gravity="right"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+                <LinearLayout
+
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/txtUserName_lsUser"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtMadeUserAdmin"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content"
+                        android:text="انتخاب بعنوان مدیر"
+                        android:gravity="left"
+                        android:textAlignment="gravity"
+                        android:layout_gravity="left"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"/>
+                    <TextView
+                        android:id="@+id/txtUserGener"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="زن"
+                        />
+                    <TextView
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="bold"
+                        android:text="جنسیت:" />
+
+                </LinearLayout>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

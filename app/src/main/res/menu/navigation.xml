@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item   android:id="@+id/list" android:title="لیست غذا ها"
+          android:icon="@drawable/navigation_icon_viewlist" />
+    <item android:id="@+id/histor"  android:title="تاریخچه دزفول"
+          android:icon="@drawable/navigation_icon_history" />
+    <item android:id="@+id/jazebeh"  android:title="جاذبه های دزفول"
+          android:icon="@drawable/navigation_icon_incognito"/>
+    <item android:id="@+id/settings"   android:title="ارتباط با ما"
+          android:icon="@drawable/navigation_icon_settings" />
+    <item android:id="@+id/exit" android:title="خروج" android:icon="@drawable/navigation_icon_exit" />
+</menu>
